@@ -66,3 +66,5 @@ Flask is lightweight and enables rapid dev as compared to django but a lot of fe
 creation are better implemented in django (Opinion)
 - This app is based on django and does contain a docker file for containerization.
 - A database backend was implemented.
+- Unit test coverage can be viewed by running ``coverage run manage.py test awesome_clinic.tests
+`` and then ``coverage report``
