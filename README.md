@@ -22,6 +22,11 @@ To run this program, all you need is python installed on your pc / machine and r
 - `python manage.py migrate`
 - ``python manage.py runserver 8000``
 
+NOTE:
+The backend database configured is postgres and can be viewed in the settings.py file. If postgres is not installed 
+on your local machine, comment out the Database portion and uncomment the portion that refers to `sqlite`.
+This will also work although `sql-lite` is not a production db.
+
 To get python on your machine, you can follow these simple tutorials:
 
 WINDOWS : https://phoenixnap.com/kb/how-to-install-python-3-windows
