@@ -1,0 +1,309 @@
+{
+	"info": {
+		"_postman_id": "d2b732ee-c2ab-46ba-9acc-ac6118ad56dc",
+		"name": "Hplus-health-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15696819"
+	},
+	"item": [
+		{
+			"name": "GET profiles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/profile/?name=John",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"profile",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "John"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST profiles",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Ashill",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "0823083739",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ashillc@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "1 mia drive, waterfall, johannesburg, 2090",
+							"type": "text"
+						},
+						{
+							"key": "member_since",
+							"value": "2022-01-01",
+							"type": "text"
+						},
+						{
+							"key": "picture",
+							"type": "file",
+							"src": "/Users/ashill/Downloads/samson-idowu-q7WYYWHIACc-unsplash.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/profile/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"profile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE profiles",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "John",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/profile/3/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"profile",
+						"3",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "John",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE profiles",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/profile/2/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"profile",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Appointment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/appointment/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"appointment",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Appointment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "date",
+							"value": "2022-05-10",
+							"type": "text"
+						},
+						{
+							"key": "doctor",
+							"value": "Dr A Smit",
+							"type": "text"
+						},
+						{
+							"key": "medical speciality",
+							"value": "Urology",
+							"type": "text"
+						},
+						{
+							"key": "branch_address",
+							"value": "1 test avenue, Johannesburg, 1111",
+							"type": "text"
+						},
+						{
+							"key": "viewed",
+							"value": "False",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/appointment/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"appointment",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Appointment",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "date",
+							"value": "2022-05-10",
+							"type": "text"
+						},
+						{
+							"key": "doctor",
+							"value": "Dr A Smit",
+							"type": "text"
+						},
+						{
+							"key": "medical speciality",
+							"value": "Urology",
+							"type": "text"
+						},
+						{
+							"key": "branch_address",
+							"value": "1 test avenue, Johannesburg, 1111",
+							"type": "text"
+						},
+						{
+							"key": "viewed",
+							"value": "False",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/appointment/1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"appointment",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE Appointment",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/profile/3/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"profile",
+						"3",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "John",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
