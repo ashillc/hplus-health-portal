@@ -140,3 +140,4 @@ buildNumber.properties
 .env
 *__pycache__*
 *images*
+*data*

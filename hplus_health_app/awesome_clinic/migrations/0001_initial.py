@@ -7,31 +7,30 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Appointments',
+            name="Appointments",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('date', models.DateTimeField(null=True)),
-                ('doctor', models.CharField(blank=True, max_length=100)),
-                ('medical_speciality', models.TextField(blank=True, max_length=100)),
-                ('branch_address', models.TextField(blank=True, max_length=300)),
-                ('viewed', models.BooleanField(default=False)),
+                ("id", models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID")),
+                ("date", models.DateTimeField(null=True)),
+                ("doctor", models.CharField(blank=True, max_length=100)),
+                ("medical_speciality", models.TextField(blank=True, max_length=100)),
+                ("branch_address", models.TextField(blank=True, max_length=300)),
+                ("viewed", models.BooleanField(default=False)),
             ],
         ),
         migrations.CreateModel(
-            name='Profile',
+            name="Profile",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(blank=True, max_length=30)),
-                ('phone', models.CharField(blank=True, max_length=30)),
-                ('email', models.TextField(blank=True, max_length=100)),
-                ('address', models.TextField(blank=True, max_length=300)),
-                ('member_since', models.DateField(null=True)),
-                ('picture', models.ImageField(blank=True, default=None, null=True, upload_to='images')),
+                ("id", models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID")),
+                ("name", models.CharField(blank=True, max_length=30)),
+                ("phone", models.CharField(blank=True, max_length=30)),
+                ("email", models.TextField(blank=True, max_length=100)),
+                ("address", models.TextField(blank=True, max_length=300)),
+                ("member_since", models.DateField(null=True)),
+                ("picture", models.ImageField(blank=True, default=None, null=True, upload_to="images")),
             ],
         ),
     ]

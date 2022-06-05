@@ -21,10 +21,10 @@ from awesome_clinic.viewsets import ProfileViewSet, AppointmentsViewSet
 
 router = routers.DefaultRouter()
 
-router.register(r'profile', ProfileViewSet, basename="profile")
-router.register(r'appointment', AppointmentsViewSet, basename="appointment")
+router.register(r"profile", ProfileViewSet, basename="profile")
+router.register(r"appointment", AppointmentsViewSet, basename="appointment")
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include(router.urls)),
+    path("admin/", admin.site.urls),
+    path("", include(router.urls)),
 ]

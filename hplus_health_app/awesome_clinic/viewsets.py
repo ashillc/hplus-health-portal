@@ -5,6 +5,7 @@ from .serializers import ProfileSerializer, AppointmentsSerializer
 
 class ProfileViewSet(viewsets.ModelViewSet):
     """Viewset to service the profile model."""
+
     serializer_class = ProfileSerializer
 
     def get_queryset(self):
@@ -21,6 +22,7 @@ class ProfileViewSet(viewsets.ModelViewSet):
 
 class AppointmentsViewSet(viewsets.ModelViewSet):
     """Viewset to service the appointment model."""
+
     serializer_class = AppointmentsSerializer
 
     def get_queryset(self):
